@@ -1,5 +1,6 @@
 import random
 
+#This is an example of what type of program should be submitted (this example isn't the best, it was quickly done)
 #This program creates a pumpkin (I can't make this look beter) with random colors for each line and slightly different randomly generated figures
 #Two inputs, how much of each color is going to be randomly generated and the number of figures to generate
 
