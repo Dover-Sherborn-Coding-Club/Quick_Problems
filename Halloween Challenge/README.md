@@ -5,5 +5,5 @@ Your goal is to create a program that creates some type of art related to Hallow
 4. Use some sort of actual coding (don't just print out the whole design)
 5. Submit your answer in a file called (your name).py
 6. You can't use modules unless they are built-in modules/libraries
-7. 
+
 For more clarification of the rules, ask Shantanu
