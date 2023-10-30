@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Responsive halloween website - Bedimcode</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo"> Halloween </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">About Us</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Portfolio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact us</a>
+            </li>
+          </ul>
+
+          <!--Close button-->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <!--Toggle button-->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-apps-2-line"></i>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home">
+        <div class="home__container">
+          <img src="home-point.png" alt="image" class="home__points" />
+          <img src="home-shadow.png" alt="image" class="home__shadow" />
+          <img src="home-moon.png" alt="image" class="home__moon" />
+          <img src="home-trees.png" alt="image" class="home__tree" />
+          <img src="home-pumpkin.png" alt="image" class="home__pumpkin" />
+          <img src="home-stones.png" alt="image" class="home__stone" />
+          <img src="home-grass.png" alt="image" class="home__grass" />
+          <div class="home__titles">
+            <h2 class="home__subtitle">TRICK OR TREAT</h2>
+            <h1 class="home__title">HALLOWEEN</h1>
+          </div>
+        </div>
+        <div class="home__data">
+          <p class="home__decription">
+            Halloween is celebrated every October 31 at night, walk through the
+            city with your friends and enjoy trick or treating, spend a
+            terrifying night under the full moon.
+          </p>
+          <a href="#" class="home__button">
+            <img src="button.svg" alt="button" />
+            <span>CLICK HERE</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!--=============== GSAP ===============-->
+    <script src="gsap.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+  </body>
+</html>
