@@ -1,0 +1,3 @@
+Create a function called bubble_sort, which takes an argument, and prints out a sorted list
+For a list to sort, use [4, 2, 9, 6, 1, 7, 0, 3, 5, 8]
+If you don't know what bubble sort is, google it
