@@ -1,0 +1,59 @@
+import random
+import time
+loop = 0
+top = [1, 2, 3, 4, 5]
+eye = [1, 2, 3, 4, 5, 6]
+body = [1, 2, 3, 4, 5, 6]
+bottom = [1, 2, 3, 4]
+def printpumpkin():
+    toprandom = random.choice(top)
+    eyerandom = random.choice(eye)
+    bodyrandom = random.choice(body)
+    bottomrandom = random.choice(bottom)
+    if (toprandom) == 1:
+        print("  _/__ ")
+    if (toprandom) == 2:
+        print("  _|__ ")
+    if (toprandom) == 3:
+        print("  ____ ")
+    if (toprandom) == 4:
+        print("  _I__ ")
+    if (toprandom) == 5:
+        print("  _,__ ")
+    if (eyerandom) == 1:
+        print(" /0  0\\")
+    if (eyerandom) == 2:
+        print(" /-  -\\")
+    if (eyerandom) == 3:
+        print(" /8  8\\")
+    if (eyerandom) == 4:
+        print(" /_  _\\")
+    if (eyerandom) == 5:
+        print(" /O  O\\")
+    if (eyerandom) == 6:
+        print(" /ඞ ඞ\\")
+    if (bodyrandom) == 1:
+        print("|      |")
+    if (bodyrandom) == 2:
+        print("{      }")
+    if (bodyrandom) == 3:
+        print("[      ]")
+    if (bodyrandom) == 4:
+        print("(      )")
+    if (bodyrandom) == 5:
+        print("I      I")
+    if (bodyrandom) == 6:
+        print("\      /")
+    if (bottomrandom) == 1:
+        print("  ---- ")
+    if (bottomrandom) == 2:
+        print("  ____ ")
+    if (bottomrandom) == 3:
+        print("  <<>> ")
+    if (bottomrandom) == 4:
+        print("  ==== ")
+while loop < 100000000:
+    printpumpkin()
+    loop += 1
+    time.sleep(0.05)
+    
