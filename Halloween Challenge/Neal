@@ -1,0 +1,59 @@
+input_size = int(input(("Enter A Number (Recommended: 7): \n")))
+
+Eye_Shape = input("Diamond or Circle Eyes: \n").casefold()
+
+
+if Eye_Shape == "diamond":
+    Eye_Diamond = input("/ or (): \n")
+elif Eye_Shape == "circle":
+    Eye_Circle = "True"
+else:
+    print ("Error, Invalid Input.")
+
+
+Arm = input("Arm or No Arm: \n").casefold() 
+
+Size_of_tail = int(input("Enter Size Of Tail (Rcommended 1): \n"))
+
+
+if Eye_Shape == "circle":      #I got lazy, but I added more options!
+    print("""                                @@@@@@@@@       @@@@@@@@@ 
+                               @@@@@@@@@@@     @@@@@@@@@@@
+                               @@@@@@@@@@@@    @@@@@@@@@@@@              
+                              @@@@@@@@@@@@@   @@@@@@@@@@@@@
+                               @@@@@@@@@@@     @@@@@@@@@@@
+                                @@@@@@@@@       @@@@@@@@@        
+                                                                       """)
+
+
+elif Eye_Diamond == "/":
+    for i in range(1, input_size+1):
+        print("                          |" +("."*(input_size-i)+"/\\"*i+"."*(input_size-i))*2+"|")
+    for i in range(input_size,0,-1):
+        print("                          |" +("."*(input_size-i)+"\\/"*i+"."*(input_size-i))*2+"|")
+elif Eye_Diamond == "()":
+    for i in range(1, input_size+1):
+        print("                          |" +("."*(input_size-i)+"())"*i+"."*(input_size-i))*2+"|")
+    for i in range(input_size,0,-1):
+        print("                          |" +("."*(input_size-i)+"))("*i+"."*(input_size-i))*2+"|")
+
+
+for i in range(input_size,2,-1):
+    print("                                 |" +("."*(input_size-i)+"\\/"*i+"."*(input_size-i) +"|"))
+
+
+if Arm == "arm":
+    for i in range(input_size,1,-1):
+        print("                                 |" +("."*(input_size+i)+"\\/"*i+"."*(input_size-i) +"|"))
+elif Arm == "no" or Arm == "no arm":
+    for i in range(input_size,1,-1):
+        print("                                 |" +("."*(input_size-i)+"\\/"*i+"."*(input_size-i) +"|"))
+else:
+    print("Error, Invalid Input.")
+
+
+for i in range(0,input_size-2):
+    print("                          -----------------------------")
+for i in range(1, input_size+Size_of_tail):
+    print("                              |" +("."*(-input_size-i+4)+"."*(input_size-i))*3+"|")
+  
