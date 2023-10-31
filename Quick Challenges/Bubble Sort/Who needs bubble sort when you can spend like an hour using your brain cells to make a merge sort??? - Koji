@@ -1,0 +1,30 @@
+def sort(a):
+    if len(a) > 1:
+        lai = 0
+        rai = 0
+        mai = 0
+        la = a[0:len(a)//2]
+        ra = a[len(a)//2:len(a)]
+
+        sort(la)
+        sort(ra)
+
+        while lai < len(la) and rai < len(ra):
+            if la[lai] < ra[rai]:
+                a[mai] = la[lai]
+                lai +=1
+            else:
+                a[mai] = ra[rai]
+                rai +=1
+            mai +=1
+        while lai < len(la):
+            a[mai] = la[lai]
+            lai +=1
+            mai +=1
+        while rai < len(ra):
+            a[mai] = ra[rai]
+            rai +=1
+            mai +=1
+arr = [5,6,6,7,8,12,3,45,6,12,437,67]
+sort(arr)
+print(arr)
