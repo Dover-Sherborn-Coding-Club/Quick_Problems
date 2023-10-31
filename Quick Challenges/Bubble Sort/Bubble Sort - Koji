@@ -1,0 +1,8 @@
+def sort(seq):
+    for i in range(len(seq)):
+        for ii in range(len(seq)-i-1):
+            if seq[ii] > seq[ii + 1]:
+                seq[ii], seq[ii+1] = seq[ii + 1], seq[ii]# swaps them
+list = [1,6,32,4,5,8,23,34]
+sort(list)
+print(list)
